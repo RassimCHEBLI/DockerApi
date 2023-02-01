@@ -4,7 +4,6 @@ echo "OffLine IP adresses: " > offline_ip.txt
 addrip=10.93.161.45
 base=${addrip:0:10}
 
-# Loop through the IP range and run ping to scan for open ports
 for i in {0..255..1}
 do
 	if ping -W 1 -c 1 $base$i
